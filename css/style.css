@@ -1,0 +1,88 @@
+/* configuracion de constantes*/
+
+:root{
+
+    /* colores */
+
+    --colorEncabezado: #ffffff;
+    --colorPie: #700255;
+    --colorEnlace:#0c3af1;
+    --colorEnlaceSobre:#1e33eb;
+
+    /*Fuentes*/
+
+    --textos:'Roboto', sans-serif;
+    --titulos: 'Lato', sans-serif;
+    }
+
+    /* Utilizar el selector universal que es asterisco*/
+
+    *{box-sizing: border-box;
+    }
+
+    .home-wrapper{
+        background-image: url('../images/maqueta.jpeg');
+        background-size: cover;
+    }
+
+    /*aplicar estilos al encabezado que es un selector de etiqueta en css*/
+
+    header{
+        /*ancho*/
+        width: 100%;
+        /*color de fondo*/
+        background-color: var(--colorEncabezado);
+        /*posicion del encabezado fijo*/
+        position: fixed;
+        /*espaciados*/
+        padding: 10px 0;
+        margin-top: -40px;
+    }
+
+    /*dimensionar el tamaño del logo,
+    combinar selectores de estilos css*/
+
+    header img{
+        width: 150px;
+    }
+    
+    /*posicionar el menu de navegacion a la derecha*/
+
+    header nav{
+        float: right;
+        /*margen arriba*/
+        margin-top: 45px;
+    }
+
+    /*aplicar estilos a los enlaces*/
+
+header nav a{
+    color: var(--colorEnlace);
+
+   /*quitar el subrayado*/
+   text-decoration: none; 
+   margin-left: 6px;
+   font-family: var(--textos);
+   font-size: 1.2rem;
+  }
+
+/*estilos a los enlaces en el estado sobre (hover)*/
+ header nav a:hover{
+  color: var(--colorEnlaceSobre);
+  font-weight: bold;
+ }
+
+ /*estilos para la seccion promocion*/
+ #promocion{
+  text-align: center;
+  padding: 250 0 250 0;
+ }
+
+/*estilos al h1 en la seccion promocion*/
+#promocion h1{
+  font-size: 2.5rem;
+  color: var(--colorEncabezado);
+  font-weight: bold;
+}
+
+/*Estilos */
